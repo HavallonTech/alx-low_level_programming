@@ -8,6 +8,6 @@ int main(void)
 {
 /* Program to print string using prinf  */
 char mystr1[105] = "with proper grammar, but the outcome is a piece of art,";
-printf("%s\n",mystr1);
+printf("%s\n", mystr1);
 return (0);
 }
