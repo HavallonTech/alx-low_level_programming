@@ -4,7 +4,7 @@
 *Program written by George kester
 * Return: 0 whenever it is succesfull
 */
-int main()
+int main(void)
 {
 int sizeint = sizeof(int);
 int sizelong = sizeof(long);
