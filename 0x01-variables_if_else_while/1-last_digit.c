@@ -4,7 +4,8 @@
 /**
 * main - Entry point
 *Program written by George kester
-*Program to return last digit of a radomly generated numbersand test the number for equality
+*Program to return last digit of a radomly
+*generated numbersand test the number for equality
 * Return: Return  0 whenever it is successfull
 */
 /* betty style doc for function main goes there */
@@ -13,8 +14,8 @@ int main(void)
 int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-/* your code goes there */
-/* int lastdigit;
+/* your code goes there
+* int lastdigit;
 *lastdigit= n % 10;
 */
 if ((n%10) > 5)
