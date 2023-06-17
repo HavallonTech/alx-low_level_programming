@@ -10,7 +10,7 @@ int main(void)
 {
 char lowercase[26] = "abcdefghijklmnopqrstuvwxyz";
 int counter;
-for(counter = 0; counter < 26; counter++)
+for (counter = 0; counter < 26; counter++)
 {
 	putchar(lowercase[counter]);
 }
