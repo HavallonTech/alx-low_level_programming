@@ -15,8 +15,8 @@ for (counter = 48; counter < 58; counter++)
 	putchar(counter);
 	if (counter != 57)
 	{
-		putchar(",");
-		putchar();
+		putchar(',');
+		putchar(' ');
 	}
 }
 putchar('\n');
