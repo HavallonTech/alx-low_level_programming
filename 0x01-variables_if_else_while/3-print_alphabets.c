@@ -8,17 +8,12 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-char thealphabet[26] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+char thealphabet[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 int counter;
-for (counter = 0; counter < 26; counter++)
+for (counter = 0; counter < 52; counter++)
 {
 	putchar(thealphabet[counter]);
 }
 putchar('\n');
-char lowercase[26] = "abcdefghijklmnopqrstuvwxyz";
-for (counter = 0; counter < 26; counter++)
-{
-	putchar(lowercase[counter]);
-}
 return (0);
 }
