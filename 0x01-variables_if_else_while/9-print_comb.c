@@ -1,7 +1,7 @@
 #include<stdio.h>
 /**
 * main - Entry point
-* Program to print all possible combination of single 
+* Program to print all possible combination of single
 * digit numbers
 * program written George kester
 * Return: Return  0 whenever it is successfull
