@@ -11,7 +11,7 @@ int main(void)
 int counter;
 for (counter = 97; counter < 123; counter++)
 {
-	if ((counter !=113) && (counter !=101))
+	if ((counter != 113) && (counter != 101))
 		putchar(counter);
 }
 putchar('\n');
