@@ -16,4 +16,4 @@ for(counter=0; counter < 26; counter++)
 }
 putchar('\n');
 return (0);
-i}
+}
