@@ -10,7 +10,7 @@
 int main(void)
 {
 int counter;
-for (counter = 48; counter =< 57; counter++)
+for (counter = 48; counter < 58; counter++)
 {
 	putchar(counter);
 	if (counter != 57)
