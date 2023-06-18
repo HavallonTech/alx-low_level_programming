@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include<stdio.h>
+#include<unistd.h>
 /**
 * main - Entry point
 *Program written by George kester
@@ -6,7 +7,6 @@
 */
 int main(void)
 {
-char mystr1[105] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-write(2, mystr1, 59);
+fput("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n",stdout);
 return (1);
 }
