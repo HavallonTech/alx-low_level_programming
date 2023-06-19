@@ -18,7 +18,7 @@ for (counter = 48; counter < 58; counter++)
 	{
 	for (counter2 = 50; counter2 < 58; counter2++)
 	{
-		if (counter2 > counter1 && conter1 > counter)
+		if (counter2 > counter1 && counter1 > counter)
 		{
 				putchar(counter);
 				putchar(counter1);
