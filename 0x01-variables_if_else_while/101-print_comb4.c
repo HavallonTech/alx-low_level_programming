@@ -28,10 +28,10 @@ for (counter = 48; counter < 58; counter++)
 					putchar(',');
 					putchar(' ');
 				}
-			}	
+			}
 		}
 	}
-}	
+}
 putchar('\n');
 return (0);
 }
