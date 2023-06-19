@@ -9,7 +9,7 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-int counter;
+int counter, counter2;
 for (counter = 48; counter < 58; counter++)
 {
 	for (counter=48; counter2 < 58; counter2++)
