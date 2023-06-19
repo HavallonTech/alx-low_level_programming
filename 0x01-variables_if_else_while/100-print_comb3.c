@@ -19,7 +19,7 @@ for (counter = 48; counter < 58; counter++)
 
 			putchar(counter);
 			putchar(counter2);
-			if (counter != 57)
+			if (counter != 56 || counter != 57)
 			{
 				putchar(',');
 				putchar(' ');
