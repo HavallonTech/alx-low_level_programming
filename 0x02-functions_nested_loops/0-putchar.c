@@ -1,7 +1,11 @@
 #include "main.h"
-/* C Programming form ALX classes
- *  Program written br George Kester
+/**
+ * main - print _putchar
+ * C Programming form ALX classes
+ * Program written br George Kester
  * Putchar task
+ * Return: 0
+ * The Main() is the ,ain body of the program
  */
 int main(void)
 {
