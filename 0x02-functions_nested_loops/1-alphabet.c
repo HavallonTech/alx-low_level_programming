@@ -1,13 +1,11 @@
 #include "main.h"
 /**
- * main - print alphabet in lowercase
- * C Programming form ALX classes
- * Program written br George Kester
- * Putchar task
+ * function print_alphabet() in lower case
+ * Program written by George Kester
+ * print_alphabet - Print all alphabet in lower case
  * Return: 0
- * The Main() is the main body of the program
  */
-int main(void)
+void print_alphabet(void)
 {
 char alph;
 for (alph = 'a'; alph <= 'z'; alph++)
