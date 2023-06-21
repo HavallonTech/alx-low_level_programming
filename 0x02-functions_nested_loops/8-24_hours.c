@@ -1,25 +1,24 @@
 #include "main.h"
 /**
  * jack_bauer - print every minute of the day
- * retunn : void return type
- * minutes stars from 00:00 to 23:59
- */
+ * return : void return type since it is printing
+ * minutes starts from 00:00 to 23:59
+*/
 
-int print_sign(int n)
+void jack_bauer(void)
 {
-if (n > 0)
+int minutesc;
+int hours;
+for (hours = 0; hours < 24; hours++)
 {
-	_putchar('+');
-	return (1);
-}
-else if (n == 0)
-{
-	_putchar (48);
-	return (0);
-}
-else
-{
-	_putchar('-');
-	return (-1);
+	for (minutesc = 0; minutesc < 60; minutesc++)
+	{
+		_putchar((hours / 10) + '0');
+		_putchar((hours % 10) + '0');
+		_putchar(':');
+		_putchar((minutesc / 10) + '0');
+		_putchar((minutesc % 10) + '0');
+		_putchar('\n');
+	}
 }
 }
