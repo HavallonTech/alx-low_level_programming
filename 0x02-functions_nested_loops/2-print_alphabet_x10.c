@@ -12,9 +12,11 @@ while (count < 10)
 {
 	char alph;
 
-	for (alph = 'a'; alph < = 'z'; alph++)
+	alph = 'a';
+	while (alph < = 'z')
 	{
 		_putchar (alph);
+		alph++;
 	}
 	_putchar('\n');
 	count++;
