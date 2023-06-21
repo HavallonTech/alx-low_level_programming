@@ -13,7 +13,7 @@ while (count < 10)
 	char alph;
 
 	alph = 'a';
-	while (alph < = 'z')
+	while (alph <= 'z')
 	{
 		_putchar (alph);
 		alph++;
