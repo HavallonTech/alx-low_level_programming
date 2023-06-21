@@ -1,9 +1,7 @@
 #include "main.h"
 /**
- * function print_alphabet() in lower case
- * Program written by George Kester
- * print_alphabet - Print all alphabet in lower case
- * Return: 0
+ * print_alphabet - Print all alphabet in lowercase
+ * Return: void
  */
 void print_alphabet(void)
 {
