@@ -6,9 +6,9 @@
  */
 void print_alphabet_x10(void)
 {
-int count;
+int count = 0;
 
-for (count = 0; count < 10; count++)
+while (count < 10)
 {
 	char alph;
 
@@ -17,5 +17,6 @@ for (count = 0; count < 10; count++)
 		_putchar (alph);
 	}
 	_putchar('\n');
+	count++;
 }
 }
