@@ -1,0 +1,25 @@
+#include "main.h"
+/**
+ * jack_bauer - print the minutest in Jack Bauers day
+ * retunn : void after printing
+ */
+
+void jack_bauer(void)
+{
+int minutecount;
+
+int hourcount;
+
+for (hourcount = 0; hourcount < 24; hourcount++)
+{
+	for (minutecount - 0; minutecount < 60; minutecount++)
+	{
+		_putchar((hourcount / 10)+'0');
+		_putchar((hourcount % 10)+'0');
+		_putchar(':');
+		_putchar((minutecount / 10) +'0');
+		_putchar((minutecount % 10) +'0' );
+		_putchar('\n');
+	}
+}
+}
