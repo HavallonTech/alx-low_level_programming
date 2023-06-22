@@ -14,13 +14,15 @@ if (n > 98)
 	{
 		if (n != 98)
 		{
-			_putchar((n) + '0');
+			_putchar('0' + (n / 10));
+			_putchar('0' + n % 10);
 			_putchar(',');
 			_putchar(' ');
 		}
 		else
 		{
-			_putchar((n) + '0');
+			_putchar('0' + (n / 10));
+			_putchar('0' + n % 10);
 			_putchar('\n');
 		}
 		n--;
@@ -32,13 +34,15 @@ else
 	{
 		if (n != 98)
 		{
-			_putchar((n) + '0');
+			_putchar('0' + (n / 10));
+			_putchar('0' + n % 10);
 			_putchar(',');
 			_putchar(' ');
 		}
 		else
 		{
-			_putchar((n) + '0');
+			_putchar('0' + (n / 10));
+			_putchar('0' + n % 10);
 			_putchar('\n');
 		}
 		n++;
