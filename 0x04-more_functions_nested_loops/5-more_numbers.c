@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * more_numbers -funtion to  print 10X the number
+ * more_numbers - funtion to  print 10 times  the number 0 to 14
  * return: void since there is no value to return
  */
 
