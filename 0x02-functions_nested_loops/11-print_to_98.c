@@ -13,9 +13,16 @@ if (n > 98)
 	while (n > 97)
 	{
 		if (n != 98)
-			printf("%d, ", n);
+		{
+			_putchar((n) + '0');
+			_putchar(',');
+			_putchar(' ');
+		}
 		else
-			printf("%d\n", n);
+		{
+			_putchar((n) + '0');
+			_putchar('\n');
+		}
 		n--;
 	}
 }
@@ -24,9 +31,16 @@ else
 	while (n < 99)
 	{
 		if (n != 98)
-			printf("%d, ", n);
+		{
+			_putchar((n) + '0');
+			_putchar(',');
+			_putchar(' ');
+		}
 		else
-			printf("%d\n", n);
+		{
+			_putchar((n) + '0');
+			_putchar('\n');
+		}
 		n++;
 	}
 }
