@@ -15,7 +15,6 @@ int main(void)
 
 	n = 612852475143;
 	mydivision = 2;
-	k = 0;
 
 	while (n != 0)
 	{
