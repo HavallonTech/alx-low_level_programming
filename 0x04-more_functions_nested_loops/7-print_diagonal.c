@@ -13,18 +13,23 @@ int row;
 int column;
 
 row = 0;
-while (row < n)
-{
-	column = 0;
-	while (column < n)
-	{
-		if (row == column)
-			_putchar('\\');
-		else if (column < row)
-			putchar(' ');
-		column++;
-	}
+if (n == 0)
 	_putchar('\n');
-	row++;
+else
+{
+	while (row < n)
+	{
+		column = 0;
+		while (column < n)
+		{
+			if (row == column)
+				_putchar('\\');
+			else if (column < row)
+				_putchar(' ');
+			column++;
+		}
+		_putchar('\n');
+		row++;
+	}
 }
 }
