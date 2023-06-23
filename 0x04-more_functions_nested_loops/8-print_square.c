@@ -1,30 +1,31 @@
 #include "main.h"
 
 /**
- * print_square -funtion to  print diagonal line
- * @n : is the number of times the character \ should be printed
- * return: void since there is no value to return
+ * print_square -funtion to  print quare
+ * @size : Where size is the size of the square
  */
 
-void print_diagonal(int n)
+void print_square(int size)
 {
-int row;
+	int row;
 
-int column;
+	int column;
 
-row = 0;
-while (row < n)
-{
-	column = 0;
-	while (column < n)
+	row = 0;
+	if (size <= 0)
+		_putchar('\n');
+	else
 	{
-		if (row == column)
-			_putchar('\\');
-		else if (column < row)
-			putchar(' ');
-		column++;
+		while (row <= size)
+		{
+			column = 0;
+			while (column <= size)
+			{
+				_putchar('#');
+				column++;
+			}
+			 _putchar('\n');
+			row++;
+		}
 	}
-	_putchar('\n');
-	row++;
-}
 }
