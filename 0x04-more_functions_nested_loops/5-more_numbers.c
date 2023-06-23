@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * more_numbers - function that prints 10 times the numbers, from 0 to 14, followed by a new line
+ * more_numbers - prints 10 times the numbers, from 0 to 14, followed by a new line
  * return: void since there is no value to return
  */
 
@@ -18,8 +18,8 @@ void more_numbers(void)
 		while (i <= 14)
 		{
 			if (i > 9)
-				_putchar('1');
-			_putchar (i % 10 + '0');
+				_putchar ('1');
+			//_putchar (i % 10 + '0');
 			i++;
 		}
 		_putchar('\n');
