@@ -1,44 +1,26 @@
-#include "main.h"
+#include <stdio.h>
 /**
- * times_table - print 9 times tabble starting from 0
- *  return : void return type
-*/
-
-void times_table(void)
+ *  main - fibonacci
+ *  Purpose - no hardcode
+ *  Return:  (void)
+ */
+int main(void)
 {
-int a;
+	int a;
+	int b;
+	int i;
+	long int result;
 
-int b;
-
-int result;
-
-a = 0;
-b = 0;
-
-while (a < 10)
-{
-	while (b < 10)
+	a = 1;
+	b = 2;
+i
+	printf("%d, %d, ", a, b);
+	for (i = 1; i <= 97; i++)
 	{
-		result = a *b;
-		if (result < 10)
-		{
-			_putchar((result) + '0');
-			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
-			_putchar(' ');
-		}
-		else
-		{
-			_putchar((result) + '0');
-			_putchar(',');
-			_putchar(' ');
-			_putchar(' ');
-		}
-		_putchar('\n');
-		b++;
+		result = a + b;
+		a = b;
+		b = result;
+		printf("%lu, ", result);
 	}
-	b = 0;
-	a++;
-}
+	printf("\n");
 }
