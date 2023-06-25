@@ -9,6 +9,7 @@ int main(void)
 	long double a;
 	long double b;
 	int i;
+
 	long double result;
 
 	a = 1;
