@@ -20,7 +20,7 @@ int main(void)
 		result = a + b;
 		a = b;
 		b = result;
-		printf("%.Lf, ", result);
+		printf("%.0Lf, ", result);
 	}
 	printf("\n");
 	return (0);
