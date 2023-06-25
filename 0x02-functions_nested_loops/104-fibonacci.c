@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-	long int a;
-	long int b;
+	long double a;
+	long double b;
 	int i;
-	long int result;
+	long double result;
 
 	a = 1;
 	b = 2;
