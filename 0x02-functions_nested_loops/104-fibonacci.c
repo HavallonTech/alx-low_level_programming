@@ -13,7 +13,7 @@ int main(void)
 
 	a = 1;
 	b = 2;
-i
+
 	printf("%d, %d, ", a, b);
 	for (i = 1; i <= 97; i++)
 	{
