@@ -23,7 +23,7 @@ while (a < 10)
 		if (result < 10)
 		{
 			_putchar((result) + '0');
-			if (b != 9 )
+			if (b != 9)
 				_putchar(',');
 			_putchar(' ');
 			_putchar(' ');
