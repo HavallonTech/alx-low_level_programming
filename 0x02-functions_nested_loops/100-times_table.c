@@ -27,7 +27,7 @@ while (a <= n)
 			_putchar((result) + '0');
 		else if (result < 10 && b != 0)
 		{
-			if (b != 10)
+			if (b < n)
 				_putchar(',');
 			_putchar(' ');
 			_putchar(' ');
@@ -38,7 +38,7 @@ while (a <= n)
 		{
 			buffer1 = result / 100;
 			buffer2 = result / 10;
-			if (b != 10)
+			if (b < n)
 				_putchar(',');
 			_putchar(' ');
 			_putchar(' ');
@@ -48,7 +48,7 @@ while (a <= n)
 		}
 		else
 		{
-			if (b != 10)
+			if (b < n)
 				_putchar(',');
 			_putchar(' ');
 			_putchar(' ');
