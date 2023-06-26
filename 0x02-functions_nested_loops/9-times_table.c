@@ -19,25 +19,27 @@ while (a < 10)
 {
 	while (b < 10)
 	{
-		result = a *b;
+		result = a * b;
 		if (result < 10)
 		{
 			_putchar((result) + '0');
-			_putchar(',');
-			_putchar(' ');
+			if (b != 9 )
+				_putchar(',');
 			_putchar(' ');
 			_putchar(' ');
 		}
 		else
 		{
-			_putchar((result) + '0');
-			_putchar(',');
+			_putchar((result / 10) + '0');
+			_putchar((result % 10) + '0')
+			if (b != 9)
+				_putchar(',');
 			_putchar(' ');
 			_putchar(' ');
 		}
-		_putchar('\n');
 		b++;
 	}
+	_putchar('\n');
 	b = 0;
 	a++;
 }
