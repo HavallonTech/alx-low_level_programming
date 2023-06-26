@@ -20,7 +20,9 @@ while (a < 10)
 	while (b < 10)
 	{
 		result = a *b;
-		if (result < 10)
+		if (a == 0)
+			_putchar((result) + '0');
+		else if ((result < 10) && (a != 0))
 		{
 			if (b != 9)
 				_putchar(',');
