@@ -49,7 +49,7 @@ while (a <= n)
 			_putchar(buffer1 + '0');
 			_putchar((buffer2 % 10) + '0');
 			_putchar((result % 10) + '0');
-		}		
+		}
 		else
 		{
 			if (b != 10)
