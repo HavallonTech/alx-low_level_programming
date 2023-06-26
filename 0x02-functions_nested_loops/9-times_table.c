@@ -2,7 +2,7 @@
 /**
  * times_table - print 9 times tabble starting from 0
  *  return : void return type
-*/
+ */
 
 void times_table(void)
 {
@@ -43,4 +43,4 @@ while (a < 10)
 	b = 0;
 	a++;
 }
-}
+
