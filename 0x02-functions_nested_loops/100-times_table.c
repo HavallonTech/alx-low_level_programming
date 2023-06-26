@@ -16,7 +16,7 @@ int result;
 a = 0;
 b = 0;
 
-if (n > 15 && n == 0)
+if (n < 15 && n > -1)
 {
 while (a <= n)
 {
