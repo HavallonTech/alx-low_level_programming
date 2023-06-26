@@ -31,7 +31,7 @@ while (a < 10)
 		else
 		{
 			_putchar((result / 10) + '0');
-			_putchar((result % 10) + '0')
+			_putchar((result % 10) + '0');
 			if (b != 9)
 				_putchar(',');
 			_putchar(' ');
