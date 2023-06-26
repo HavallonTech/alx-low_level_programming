@@ -13,8 +13,8 @@ int buffer1;
 int buffer2;
 int result;
 
-a = n;
-b = n;
+a = 0;
+b = 0;
 
 if (n > 15 || n == 0)
 	_putchar('\n');
