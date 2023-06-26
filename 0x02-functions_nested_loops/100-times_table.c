@@ -27,7 +27,7 @@ while (a <= n)
 			_putchar((result) + '0');
 		else if (result < 10 && b != 0)
 		{
-			if (b < (n + )1)
+			if (b < (n + 1))
 				_putchar(',');
 			_putchar(' ');
 			_putchar(' ');
@@ -48,7 +48,7 @@ while (a <= n)
 		}
 		else
 		{
-			if (b < (n + 1))
+			if (b < (n +1))
 				_putchar(',');
 			_putchar(' ');
 			_putchar(' ');
