@@ -19,7 +19,7 @@ while (a < 10)
 {
 	while (b < 10)
 	{
-		result = a * b;
+		result = a *b;
 		if (result < 10)
 		{
 			_putchar((result) + '0');
