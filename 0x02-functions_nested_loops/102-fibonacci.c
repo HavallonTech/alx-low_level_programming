@@ -21,7 +21,10 @@ int main(void)
 		result = a + b;
 		a = b;
 		b = result;
-		printf("%.0Lf, ", result);
+		if (i == 48)
+			printf("%.0Lf", result);
+		else
+			printf("%.0Lf, ", result);
 	}
 	printf("\n");
 	return (0);
