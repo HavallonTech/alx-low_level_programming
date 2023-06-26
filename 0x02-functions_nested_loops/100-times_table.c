@@ -34,7 +34,6 @@ while (a <= n)
 			_putchar(' ');
 			_putchar(' ');
 			_putchar(' ');
-			_putchar(' ');
 			_putchar((result) + '0');
 		}
 		else if (result > 99 && b != 0)
@@ -45,7 +44,6 @@ while (a <= n)
 				_putchar(',');
 			_putchar(' ');
 			_putchar(' ');
-			_putchar(' ');
 			_putchar(buffer1 + '0');
 			_putchar((buffer2 % 10) + '0');
 			_putchar((result % 10) + '0');
@@ -54,7 +52,6 @@ while (a <= n)
 		{
 			if (b != 10)
 				_putchar(',');
-			_putchar(' ');
 			_putchar(' ');
 			_putchar(' ');
 			_putchar((result / 10) + '0');
