@@ -7,6 +7,7 @@
 int _strlen(char *s)
 {
 	long int myStrLenght;
+
 	myStrLenght = 0;
 
 	while (*s != '\0')
