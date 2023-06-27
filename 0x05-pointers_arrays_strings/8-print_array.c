@@ -13,10 +13,11 @@ int i;
 int lenght;
 
 lenght = n - 1;
-
+i = 0;
 while (i < lenght)
 {
 	printf("%d, ", a[i]);
+	i++;
 }
 if (i == (lenght))
 {
