@@ -4,6 +4,7 @@
  * @dest: first input value
  * @src:  second input value
  * Return: void
+ * @n: input value
  */
 
 char *_strncat(char *dest, char *src, int n)
