@@ -12,7 +12,7 @@ char *leet(char *n)
 	char leet1[] = "aAeEoOtTlL";
 	char leet2[] = "4433007711";
 
-	while (n[counter1] != '\0')
+	for  (counter1 =0; n[counter1] != '\0'; counter1++)
 	{
 		for (counter2 = 0; counter2 < 10; counter2++)
 		{
@@ -21,7 +21,7 @@ char *leet(char *n)
 				n[counter1] = leet2[counter2];
 			}
 		}
-		counter1 = counter1 + 1;
+		/**   counter1 = counter1 + 1;*/
 	}
 	return (n);
 }
