@@ -12,7 +12,7 @@ void print_number(int n)
 
 	myint  = n;
 	/* Handling negative values */
-	if (myint < 0)
+	if (n < 0)
 	{
 		_putchar('-');
 		myint = -n;
@@ -20,8 +20,6 @@ void print_number(int n)
 	/** for real numbers greater than 9 */
 
 	if (myint / 10 != 0)
-	{
 		print_number(myint / 10);
-	}
 	_putchar((myint % 10) + '0');
 }
