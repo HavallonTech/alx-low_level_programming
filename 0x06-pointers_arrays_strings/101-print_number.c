@@ -1,26 +1,27 @@
 #include "main.h"
 
 /**
- * print_number - print numbers chars
- * @n: integer params
- * Return: 0
+ * print_number - a function that print numbers chars
+ * @n: The integer parameter to accept
+ * Return: void
  */
 
 void print_number(int n)
 {
-	unsigned int n1;
+	unsigned int myint;
 
-	n1 = n;
-
-	if (n < 0)
+	myint  = n;
+	/* Handling negative values */
+	if (myint < 0)
 	{
 		_putchar('-');
-		n1 = -n;
+		myint = -n;
 	}
+	/** for real numbers greater than 9 */
 
-	if (n1 / 10 != 0)
+	if (myint / 10 != 0)
 	{
-		print_number(n1 / 10);
+		print_number(myint / 10);
 	}
-	_putchar((n1 % 10) + '0');
+	_putchar((myint % 10) + '0');
 }
