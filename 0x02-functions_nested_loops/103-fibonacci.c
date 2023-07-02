@@ -6,22 +6,28 @@
  */
 int main(void)
 {
-	long double a;
-	long double b;
-	int i;
-	long double result;
+	unsigned long int a;
+	unsigned long int b;
+	unsigned long int numbern;
+
+	long double  summation;
+
+	int counter;
 
 	a = 1;
 	b = 2;
+	counter = 1;
+	summation = 0;
 
-	printf("%.0Lf, %.0Lf, ", a, b);
-	for (i = 1; i <= 96; i++)
+	while (counter <= 40)
 	{
-		result = a + b;
+		if (a < 4000000 && (a % 2) == 0)
+			summation = summation + a;
+		numbern = a + b;
 		a = b;
-		b = result;
-		printf("%.0Lf, ", result);
+		b = numbern;
+		counter = counter + 1;
 	}
-	printf("\n");
+	printf("%.0Lf\n", summation);
 	return (0);
 }
