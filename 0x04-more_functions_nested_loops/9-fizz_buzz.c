@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
@@ -11,11 +10,11 @@
 int main(void)
 {
 	int k;
-
 	int i;
 
 	k = 100;
 	i = 1;
+
 	while (i <= k)
 	{
 		if ((i % 3 == 0) && (i % 5 == 0))
