@@ -1,24 +1,20 @@
 #include "main.h"
-
 /**
  *_memcpy - a function that copies memory area
- *@dest: where memory  isto be  stored
- *@src: memory to be copied
- *@n: number of bytes found in the serach
- *Return: Returns copied memory with number of bytes changed
+ *@dest: memory where is stored
+ *@src: memory where is copied
+ *@n: number of bytes
+ *
+ *Return: copied memory with n bytes changed
  */
-
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	int counter;
-	int counter1;
+	int r = 0;
+	int i = n;
 
-	counter = 0;
-	counter1 = 0;
-
-	for (; counter < counter1; counter++)
+	for (; r < i; r++)
 	{
-		dest[counter] = src[counter];
+		dest[r] = src[r];
 		n--;
 	}
 	return (dest);
