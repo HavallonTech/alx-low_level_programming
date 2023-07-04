@@ -14,7 +14,7 @@ char *_strchr(char *s, char c)
 	counter	= 0;
 
 	/** loop to search through our string */ 
-	while(s[counter] >= '\0')
+	while (s[counter] >= '\0')
 	{
 		if (s[counter] == c)
 			return (&s[counter]);
