@@ -11,6 +11,9 @@ void print_chessboard(char (*a)[8])
 	unsigned int counter1;
 	unsigned int counter2;
 
+	counter1 = 0;
+	counter2 = 0;
+
 	while (counter1 < 8)
 	{
 		while (counter2 < 8)
