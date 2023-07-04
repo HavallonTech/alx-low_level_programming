@@ -1,0 +1,1 @@
+0x07. C - Even more pointers, arrays and strings, Write a function that fills memory with a constant byte up until,  a function that prints the sum of the two diagonals of a square matrix of integers.
