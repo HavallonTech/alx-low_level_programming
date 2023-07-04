@@ -8,17 +8,13 @@
 
 void print_chessboard(char (*a)[8])
 {
+	unsigned int i;
+	unsigned int j;
 
-	unsigned int counter1;
-	unsigned int counter2;
-	int k;
-
-	k = 8;
-
-	for (counter1 = 0; counter1 < k; counter1++)
+	for (i = 0; i < 8; i++)
 	{
-		for (counter2 = 0; counter2 < k; counter2++)
-			_putchar(a[counter1][counter2]);
+		for (j = 0; j < 8; j++)
+			_putchar(a[i][j]);
 		_putchar('\n');
 	}
 }
