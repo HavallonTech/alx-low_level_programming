@@ -1,6 +1,7 @@
 #include "main.h"
 
 /**
+ * _strpbrk : A function that searches a string
 * _strpbrk - A function that searches a string for any of a set of bytes
 * @s: first parameter input
 * @accept: second  parameter input
@@ -15,7 +16,7 @@ char *_strpbrk(char *s, char *accept)
 	{
 		for (counter = 0; accept[counter]; counter++)
 		{
-			if (*s == accept[k])
+			if (*s == accept[counter])
 			{
 				return (s);
 			}
