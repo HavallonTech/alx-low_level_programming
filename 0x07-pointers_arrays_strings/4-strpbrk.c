@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _strpbrk : A function that searches a string
+* _strpbrk : A function that searches a string
 * _strpbrk - A function that searches a string for any of a set of bytes
 * @s: first parameter input
 * @accept: second  parameter input
-* Retuunr : 0 upon successfull complition of execution
+* Return : 0 upon successfull complition of execution
 */
 
 char *_strpbrk(char *s, char *accept)
