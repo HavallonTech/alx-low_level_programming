@@ -16,14 +16,10 @@ void print_chessboard(char (*a)[8])
 	counter2 = 0;
 	k = 8;
 
-	while (counter1 < k)
+	for (counter1 = 0; counter1 < k; counter1++)
 	{
-		for (counter2 = 0 ; counter2 < k; counter2++)
-		{
+		for (counter2 = 0; counter2 < k; counter2++)
 			_putchar(a[counter1][counter2]);
-			 /**counter2++; */
-		}
 		_putchar('\n');
-		counter1++;
 	}
 }
