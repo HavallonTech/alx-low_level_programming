@@ -14,11 +14,17 @@ char *_strchr(char *s, char c)
 	counter	= 0;
 
 	/** loop to search through our string */ 
-	while (s[counter] >= '\0')
-	{
-		if (s[counter] == c)
-			return (&s[counter]);
-		counter = counter + 1;
-	}
+/**	while (s[counter] >= '\0')
+*	{
+*		if (s[counter] == c)
+*			return (&s[counter]);
+*		counter = counter + 1;
+*	}
+*/
+	for (; s[counter] >= '\0'; counter++)
+        {
+                if (s[counter] == c)
+                        return (&s[counter]);
+        }
 	return (0);
 }
