@@ -1,10 +1,12 @@
 #include "main.h"
+
 /**
-* _strstr - A function that loctaes a sub string
-* @haystack: first function parameter
+* _strstr - Entry point function that search for substrings
+* @haystack: first function passing parameter
 * @needle: second function parameter
-* Return : 0 when succesful
+* Return: returns 0 upon succes
 */
+
 char *_strstr(char *haystack, char *needle)
 {
 	for (; *haystack != '\0'; haystack++)
