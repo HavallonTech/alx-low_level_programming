@@ -1,12 +1,11 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * create_array - a function that creates an array and fill them with a char
- * @size: size of the arrayis termed size
- * @c: char to assign to each array index
- * @mystring: parameter to be returned
- * Description: create array of size size and assign char c
- * Return: pointer to array, NULL if fail as specified by malloc
+ * create_array - create array of size "size" and assign the char c
+ * @size: size of array is termed size
+ * @c: char to assign to each index
+ * Description: create array of size size and assign char c to each index
+ * Return: pointer to array, NULL if fail as per malloc
  *
  */
 char *create_array(unsigned int size, char c)
@@ -28,10 +27,5 @@ char *create_array(unsigned int size, char c)
 		mystring[k] = c;
 		k++;
 	}
-/**
-*	for (i = 0; i < size; i++)
-*
-* str[i] = c;
-*/
 	return (mystring);
 }
