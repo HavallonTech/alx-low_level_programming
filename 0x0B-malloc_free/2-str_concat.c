@@ -1,50 +1,40 @@
-#include "main.h"
-#include <stdlib.h>
-/**
- * str_concat - a function that concatenates two strings
- * @s1: input one to concatinate
- * @s2: second input to be joined
- * Return: The joined strings as one
+ str_concat - get ends of input and add together for size
+ * @s1: input one to concat
+ * @s2: input two to concat
+ * Return: concat of s1 and s2
  */
-
 char *str_concat(char *s1, char *s2)
 {
-	char stringconcate;
-	int k;
-	int size;
+	char *conct;
+	int i, ci;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
 
-	k = 0;
-	size = 0;
+	i = ci = 0;
+	while (s1[i] != '\0')
+		i++;
+	while (s2[ci] != '\0')
+		ci++;
+	conct = malloc(sizeof(char) * (i + ci + 1));
 
-	while (s1[k] != '\0')
-		k++;
-	while (s2[size] != '\0')
-		size++;
-	stringconcate = malloc(sizeof(char) * (k + size + 1));
-
-	if (stringconcate == NULL)
+	if (conct == NULL)
 		return (NULL);
-	k = 0;
-	size = 0;
+	i = ci = 0;
+	while (s1[i] != '\0')
+	{
+		conct[i] = s1[i];
+		i++;
+	}
 
-	/* harvesting first string to last char "'\0" */
-	while (s1[k] != '\0')
+	while (s2[ci] != '\0')
 	{
-		stringconcate[k] = s1[k];
-		k++;
+		conct[i] = s2[ci];
+		i++, ci++;
 	}
-	/* Harvestignsecong string */
-	while (s2[size] != '\0')
-	{
-		stringconcate[k] = s2[size];
-		k++;
-		size++;
-	}
-	stringconcate[k] = '\0';
-	return (stringconcate);
+	conct[i] = '\0';
+	return (conct);
 }
+
