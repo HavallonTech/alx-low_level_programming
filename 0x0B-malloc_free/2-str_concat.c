@@ -27,17 +27,20 @@ char *str_concat(char *s1, char *s2)
 		k2++;
 	strcon = malloc(sizeof(char) * (k1 + k2 + 1));
 
+	/** Retunr Null if memeory failed to be allocated */
 	if (strcon == NULL)
 		return (NULL);
 	k1 = 0;
 	k2 = 0;
 
+	/** Harvesting string 1 */
 	while (s1[k1] != '\0')
 	{
 		strcon[k1] = s1[k1];
 		k1++;
 	}
 
+	/** Harvesting string 2 */
 	while (s2[k2] != '\0')
 	{
 		strcon[k1] = s2[k2];
