@@ -9,15 +9,15 @@
 
 char *argstostr(int ac, char **av)
 {
+	char *str;
 	int i;
 	int nth;
-	int j;
-	int k;
+	int r;
+	/**int k;*/
+	int count;
 
-	k = 0;
-	j = 0;
-
-	/* char *str; */
+	count  = 0;
+	r = 0;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
@@ -25,26 +25,30 @@ char *argstostr(int ac, char **av)
 	while (i < ac)
 	{
 		for (nth = 0; av[i][nth]; nth++)
-			k = k + 1;
-		i = i + 1;
+			count++;
+		i++;
 	}
-	k += ac;
+	count += ac;
 
-	char *str = malloc(sizeof(char) * k + 1);
+	str = malloc(sizeof(char) * count + 1);
 
+	/*Failure to create the dynamic memory allocation */
 	if (str == NULL)
 		return (NULL);
-	for (i = 0; i < ac; i++)
+
+	/** Actuall concatination do here */
+	while (i < ac)
 	{
-	for (nth = 0; av[i][nth]; nth++)
-	{
-		str[j] = av[i][nth];
-		j = j + 1;
-	}
-	if (str[j] == '\0')
-	{
-		str[j++] = '\n';
-	}
+		for (nth = 0; av[i][nth]; nth++)
+		{
+			str[r] = av[i][nth];
+			r++;
+		}
+		if (str[r] == '\0')
+		{
+			str[r++] = '\n';
+		}
+		i++;
 	}
 	return (str);
 }
