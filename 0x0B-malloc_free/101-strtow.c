@@ -38,8 +38,10 @@ int wordscount(char *s)
 char **strtow(char *str)
 {
 	char **arraymatrix, *temp;
-	int i, k = 0, len = 0;
+	int i, kess, len;
 	int words, c = 0, st, en;
+
+	kess = len = 0;
 
 	while (*(str + len))
 		len++;
@@ -64,8 +66,8 @@ char **strtow(char *str)
 				while (st < en)
 					*temp++ = str[st++];
 				*temp = '\0';
-				arraymatrix[k] = temp - c;
-				k++;
+				arraymatrix[kess] = temp - c;
+				kess++;
 				c = 0;
 			}
 		}
@@ -73,7 +75,7 @@ char **strtow(char *str)
 			st = i;
 	}
 
-	arraymatrix[k] = NULL;
+	arraymatrix[kess] = NULL;
 
 	return (arraymatrix);
 }
