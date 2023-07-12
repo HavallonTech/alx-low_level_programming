@@ -48,11 +48,10 @@ char **strtow(char *str)
 	words = wordscount(str);
 	if (words == 0)
 		return (NULL);
-
 	arraymatrix = (char **) malloc(sizeof(char *) * (words + 1));
+
 	if (arraymatrix == NULL)
 		return (NULL);
-
 	for (i = 0; i <= len; i++)
 	{
 		if (str[i] == ' ' || str[i] == '\0')
@@ -74,8 +73,6 @@ char **strtow(char *str)
 		else if (c++ == 0)
 			st = i;
 	}
-
 	arraymatrix[kess] = NULL;
-
 	return (arraymatrix);
 }
