@@ -2,8 +2,8 @@
 #include <stdlib.h>
 /**
  * malloc_checked - A function to check memory allocation
- *
- *
+ *@b : function Parameter passed to be check
+ *Return: type is void
  *
  */
 void *malloc_checked(unsigned int b)
@@ -13,6 +13,6 @@ void *malloc_checked(unsigned int b)
 	checker = malloc(b);
 
 	if (checker == NULL)
-		return (98);
+		exit (98);
 	return (checker);
 }
