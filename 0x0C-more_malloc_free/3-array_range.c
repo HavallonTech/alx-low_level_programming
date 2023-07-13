@@ -26,10 +26,8 @@ int *array_range(int min, int max)
 	while (min <= max)
 	{
 		ptrvar[k] = min;
-		K++;
+		k++;
 		min++;
 	}
-
 	return (ptrvar);
 }
-
