@@ -11,7 +11,8 @@
 int *array_range(int min, int max)
 {
 	int *ptrvar;
-	int k;	
+	int k;
+
 	/* if there is no valid interger to be created for */
 	if (min > max)
 		return (NULL);
@@ -20,14 +21,12 @@ int *array_range(int min, int max)
 	/** if memory creation fails */
 	if (ptrvar == NULL)
 		return (NULL);
-
-
 	k = 0;
 
 	while (min <= max)
 	{
 		ptrvar[k] = min;
-		k++;
+		K++;
 		min++;
 	}
 
