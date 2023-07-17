@@ -18,10 +18,10 @@ struct dog
 
 /**
  * dog_t - typedef for struct the dog
+ * including  Prototype definition
  */
 
 typedef struct dog dog_t;
-/** Prototype definition */
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
