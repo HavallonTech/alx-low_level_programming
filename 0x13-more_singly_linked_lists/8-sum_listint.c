@@ -8,15 +8,13 @@
 
 int sum_listint(listint_t *head)
 {
-	int datasum;
-
-	datasum = 0;
+	int datasum = 0;
 
 	listint_t *temp = head;
 
 	while (temp)
 	{
-		datasum = datasum + temp->n;
+		datasum += temp->n;
 		temp = temp->next;
 	}
 
