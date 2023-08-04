@@ -1,3 +1,4 @@
+#include <unistd.h>
 #include "main.h"
 /**
  * jkputchar - writes the character c to stdout
@@ -6,7 +7,7 @@
  * On error, -1 is returned, a dn erro no is set appropriately
  */
 
-int jkputchar(char a)
+int _putchar(char a)
 {
 	return (write(1, &a, 1));
 }
