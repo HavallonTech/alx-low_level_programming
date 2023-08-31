@@ -1,4 +1,5 @@
-#include <unistd.h>
+#include "main.h"
+
 
 /**
  * _putchar - ALX given: writes the character c to stdout
