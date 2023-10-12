@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 /***
  * print_dlistint - A function to print elements of a doubly link list
  * @h : Head parameter received
