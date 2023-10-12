@@ -12,16 +12,14 @@ size_t print_dlistint(const dlistint_t *h)
 
 	k = 0;
 
-	/*struct dlistint_s *k = head; */
-
 	if (h == NULL)
 		return (k);
 
 	while (h->prev != NULL)
+	{
 		h = h->prev;
-
-	/*start from the beginning*/
-	while (p != NULL)
+	}
+	while (h != NULL)
 	{
 		k++;
 		printf(" %d\n", h->n);
