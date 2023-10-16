@@ -19,7 +19,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 *
  * Return: A int upon completion
  */
-char *_strchr(char *s, char *c)
+char *_strchr(char *s, char c)
 {
 	return (NULL);
 }

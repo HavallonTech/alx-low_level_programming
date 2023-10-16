@@ -1,16 +1,11 @@
-int _isdigit(int c);
-int _strlen(char *s);
-void _puts(char *s);
-char *_strcpy(char *dest, char *src);
-int _atoi(char *s);
 #include "main.h"
 /**
  * _atoi - the parent child process handled
- * @c : char to pass
+ * @s : char to pass
  *
  * Return: A int upon completion
  */
-int _atoi(char c)
+int _atoi(char *s)
 {
 	return (0);
 }
@@ -26,19 +21,19 @@ char *_strcpy(char *dest, char *src)
 }
 /**
  * _puts - the parent child process handled
- * @c : int to pass
+ * @s : int to pass
  * Return: void upon completion
  */
-void _puts(int c)
+void _puts(char *s)
 {
 
 }
 /**
  * _isdigit - the parent child process handled
- * @n : int to pass
+ * @c : int to pass
  * Return: A int upon completion
  */
-int _isdigit(int n)
+int _isdigit(int c)
 {
 	return (0);
 }
