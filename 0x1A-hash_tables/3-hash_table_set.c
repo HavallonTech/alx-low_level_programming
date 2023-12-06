@@ -41,11 +41,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new_node->next = ht->array[k_index];
 	ht->array[k_index] = new_node;
 
-	return 1;
+	return (1);
 }
 
 /**
- * insert_node - function that insert a node
+ * insert_new_node - function that insert a node
  * @key: the key
  * @value: the value associed with the key
  * Return: the new_node or NULL if failed
@@ -59,19 +59,19 @@ hash_node_t *insert_new_node(const char *key, const char *value)
 	new_node->key = strdup(key);
 	new_node->value = strdup(value);
 	if (new_node == NULL)
-		return NULL;
+		return (NULL);
 	if (new_node->key == NULL)
 	{
-		free (new_node);
-		return NULL;
+		free(new_node);
+		return (NULL);
 	}
 	if (new_node->value == NULL)
 	{
-		free (new_node);
-		free (new_node -> key);
-		return NULL;
+		free(new_node);
+		free(new_node->key);
+		return (NULL);
 	}
 	/* set the next to  null marking the end of the node */
-	new_node ->next = NULL;
+	new_node->next = NULL;
 	return (new_node);
 }
