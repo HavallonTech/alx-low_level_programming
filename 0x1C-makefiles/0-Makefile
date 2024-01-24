@@ -1,19 +1,21 @@
-# Makefile
+# Creating a Makefile from school.c main.c and m.h
+# make: build  school  as the executable file
+# make clean: clean-up all built files
 
-CC = gcc
-CFLAGS = -Wall -Werror
+all: school
 
-SRCS = main.c school.c
-OBJS = $(SRCS:.c=.o)
-EXECUTABLE = school
+# To create the executable file school we need the object file
+# school.o main.o
+school: school.o main.o
+	gcc -Wall -pedantic -Werror -Wextra -std=gnu89 -0 school school.o main.o
 
-all: $(EXECUTABLE)
+# To create the object sile school.o 
+# we need the source file school.c m.h and main.c
+school.o: school.c main.c m.h
+	gcc -Wall -pedantic -Werror -Wextra -std=gnu89 -c school.c
 
-$(EXECUTABLE): $(OBJS)
-	$(CC) $(CFLAGS) $(OBJS) -o $(EXECUTABLE)
-
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
-
+## To create the object file main.o we need 
+main.o: school.c main.c m.h
+	gcc -Wall -pedantic -Werror -Wextra -std=gnu89 -c main.c
 clean:
-	rm -f $(OBJS) $(EXECUTABLE)
+	rm -f school *.o*~
