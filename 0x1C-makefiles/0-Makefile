@@ -18,4 +18,4 @@ school.o: school.c main.c m.h
 main.o: school.c main.c m.h
 	gcc -Wall -pedantic -Werror -Wextra -std=gnu89 -c main.c
 clean:
-	rm -f school *.o*~
+	rm -f school *.o*
