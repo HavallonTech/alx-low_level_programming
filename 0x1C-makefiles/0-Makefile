@@ -7,15 +7,15 @@ all: school
 # To create the executable file school we need the object file
 # school.o main.o
 school: school.o main.o
-	gcc -g -wall -0 school school.o main.o
+	gcc -g -Wall -0 school school.o main.o
 
 # To create the object sile school.o 
 # we need the source file school.c m.h and main.c
 school.o: school.c main.c m.h
-	gcc -g -wall -c school.c
+	gcc -g -Wall -c school.c
 
 ## To create the object file main.o we need 
 main.o: school.c main.c m.h
-	gcc -g -wall -c main.c
+	gcc -g -Wall -c main.c
 clean:
 	rm -f school *.o*~
