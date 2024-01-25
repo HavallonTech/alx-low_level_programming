@@ -6,7 +6,7 @@ SRC = school.c main.c
 MAME = school
 OBJ = main.o school.o
 all:
-	$(CC) $(SRC) -o $(NAME)
+	$(CC) $(OBJ) -o $(NAME)
 
 
 # To create the executable file school we need the object file
