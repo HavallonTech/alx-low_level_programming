@@ -2,23 +2,29 @@
 # make: build  school  as the executable file
 # make clean: clean-up all built files
 CC = gcc
-SRC = school.c main.c m.h
+SRC = school.c main.c
 MAME = school
+OBJ = main.o school.o
 all:
 	$(CC) $(SRC) -o $(NAME)
 
+
 # To create the executable file school we need the object file
 # school.o main.o
-#school: school.o main.o
-#	gcc -Wall -pedantic -Werror -Wextra -std=gnu89 -0 school school.o main.o
+
+school: $(OBJ)
+	gcc -Wall -pedantic -Werror -Wextra -std=gnu89 -0 school $(OBJ)
 
 # To create the object sile school.o 
 # we need the source file school.c m.h and main.c
-#school.o: school.c main.c m.h
-#	gcc -Wall -pedantic -Werror -Wextra -std=gnu89 -c school.c main.c
+school.o: $(SRC)
+	gcc -Wall -pedantic -Werror -Wextra -std=gnu89 -c $(SRC)
 
 ## To create the object file main.o we need 
-#main.o: school.c main.c m.h
-#	gcc -Wall -pedantic -Werror -Wextra -std=gnu89 -c main.c school.c
+main.o: $(SRC)
+	gcc -Wall -pedantic -Werror -Wextra -std=gnu89 -c $(SRC)
+
+# clean is used to clean the file system
+
 clean:
 	rm -f $(NAME) *.o*
