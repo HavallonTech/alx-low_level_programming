@@ -1,0 +1,18 @@
+# Creating a Makefile from school.c main.c and m.h
+# make: build  school  as the executable file
+# make clean: clean-up all built files
+# OBJ = main.o school.o
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+RM = rm -f
+all : $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+clean:
+	$(RM) *~$(NAME)
+oclean:
+	$(RM) $(OBJ)
+fclean: oclean clean
+
+re: oclean all 
