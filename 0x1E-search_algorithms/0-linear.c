@@ -8,10 +8,12 @@
  * Return: the index of the matched value or -1 if no match
  */
 
-int linear_search(int *array, size_t size, int value){
+int linear_search(int *array, size_t size, int value)
+{
 	size_t k;
 
-	if (array != NULL){
+	if (array != NULL)
+	{
 		for (k = 0; k < size; k++)
 		{
 			printf("Value checked array[%ld] = [%d]\n", k, array[k]);
