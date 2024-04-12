@@ -15,23 +15,26 @@ int binary_search(int *array, size_t size, int value)
 	left = array[0];
 	right = array[size - 1];
 	mid_term = find_mid(left, right);
-	printf("value of right[%ld]\n", right);
-	printf("value of left[%ld] \n", left);
-	printf("Searching in array: ");
-	while (left < right)
+	while (left <= right)
 	{
-		for (k = left; k < right + 1; k++){
-			printf("%d, ",array[k]);
+		printf("Searching in array: ");
+		for(k = left; k <= right; k++)
+		{
+			if(k == right)
+				printf("%d",array[k]);
+			else
+				printf("%d, ",array[k]);
 		}
 		printf("\n");
 		if(value == array[mid_term])
 			return (array[mid_term]);
-
-		else if (value > array[mid_term]){
+		else if (value > array[mid_term])
+		{
 			left = array[mid_term + 1];
 			mid_term = find_mid(left, right);
 		}
-		else if (value < array[mid_term]){
+		else if (value < array[mid_term])
+		{
 			right = mid_term - 1;
 			mid_term = find_mid(left, right);
 		}
@@ -42,12 +45,11 @@ int binary_search(int *array, size_t size, int value)
 
 
 /**
-* binary_search - searching for a value using the Linear search algorithm
-* @array: pointer to the first element of the array
-* @size: the number of elements in the array
-* @value: the value we search for
+* find_mid - searching for  yhr mid value
+* @lft: pointer to the first element of the array
+* @right: pointer to the last/right element of the array
 *
-* Return: the mid index of the array
+* Return: the mid index 
 */
 
 int find_mid(size_t left, size_t right)
